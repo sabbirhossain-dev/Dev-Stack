@@ -28,7 +28,7 @@ const Card = ({data,selectedItem,setSelectedItem,count,setCount}:PropsType) => {
 
 
   return (
-    <div className={`border ${isSelectedCard ? "border-green-300 shadow-md" : "border-gray-200"} p-5 rounded-md `}>
+    <div className={`border ${isSelectedCard ? "border-green-300 shadow-md" : "border-gray-200"} p-5 rounded-md hover:shadow-md hover:border-green-300 transition-all duration-300`}>
         <div className="flex justify-between">
             <img src={data.icon} alt="icon" className="w-8 h-auto" />
             <button
