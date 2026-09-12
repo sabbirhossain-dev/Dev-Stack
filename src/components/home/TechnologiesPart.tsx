@@ -4,6 +4,10 @@ import { CardItems } from "./CardItems";
 import Stack from "./Stack";
 const Skills = () => {
     const [data, setData] = useState<TechType[]>([]);
+
+    const [selectedItem,setSelectedItem] = useState<TechType[]>([])
+
+    const [count, setCount] = useState(0)
     
     useEffect(()=>{
 
@@ -39,9 +43,21 @@ const Skills = () => {
 
     {/* card items */}
     <div className="flex justify-between gap-5 py-10">
-      <div className="w-3/4"><CardItems data={data} setData={setData}/></div>
+      <div className="w-3/4">
+      <CardItems 
+      data={data} 
+      setData={setData}
+      selectedItem={selectedItem}
+      setSelectedItem={setSelectedItem}
+      count={count} 
+      setCount={setCount}/>
+      </div>
       <div className="w-1/4">
-        <Stack />
+        <Stack 
+        selectedItem={selectedItem} 
+        setSelectedItem={setSelectedItem} 
+        count={count} 
+        setCount={setCount}/>
       </div>
     </div>
   

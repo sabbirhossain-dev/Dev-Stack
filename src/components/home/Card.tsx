@@ -1,4 +1,4 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
+import {  type Dispatch, type SetStateAction } from "react";
 import type { TechType } from "../technologiesType";
 import { FaStar } from "react-icons/fa6";
 import { toast } from "react-toastify";
@@ -6,17 +6,29 @@ import { toast } from "react-toastify";
 type PropsType = {
     data:TechType;
     setData: Dispatch<SetStateAction <TechType[]>>
+    selectedItem: TechType[];
+    setSelectedItem: Dispatch<SetStateAction <TechType[]>>
+    count: number
+    setCount: Dispatch<SetStateAction <number>>
 }
-const Card = ({data}:PropsType) => {
+const Card = ({data,selectedItem,setSelectedItem,count,setCount}:PropsType) => {
 
-    const [disableButton, setDisableButton] = useState(false)
+    // const [disableButton, setDisableButton] = useState(false)
+
+    const isSelectedCard = selectedItem.some((item)=>item.id === data.id)
 
     const handleAddButton =()=>{
-        setDisableButton(true);
+        // setDisableButton(true);
         toast.success(`${data.name} is added!`)
+        //selected items is here
+        setSelectedItem((prev)=>[...prev,data])
+        const countIncrease = count+1
+        setCount(countIncrease)
     }
+
+
   return (
-    <div className={`border ${disableButton ? "border-green-300 shadow-md" : "border-gray-200"} p-5 rounded-md `}>
+    <div className={`border ${isSelectedCard ? "border-green-300 shadow-md" : "border-gray-200"} p-5 rounded-md `}>
         <div className="flex justify-between">
             <img src={data.icon} alt="icon" className="w-8 h-auto" />
             <button
@@ -31,7 +43,7 @@ const Card = ({data}:PropsType) => {
             <p className="font-medium text-[11px] text-[#64748B]">{data.level}</p>
             <p className="font-semibold text-[11px] text-[#334155] flex gap-1 items-center"><span className="text-yellow-500"><FaStar /></span>{data.rating}</p>
         </div>
-        <button className={`btn btn-neutral text-sm  w-full !h-9 !min-h-0 `} onClick={handleAddButton} disabled={disableButton}> {disableButton ? "Added to Stack": "Add to Stack"}</button>
+        <button className={`btn btn-neutral text-sm  w-full !h-9 !min-h-0 `} onClick={handleAddButton} disabled={isSelectedCard}> {isSelectedCard ? "Added!": "Add to Stack"}</button>
     </div>
   )
 }

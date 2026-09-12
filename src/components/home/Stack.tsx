@@ -1,14 +1,55 @@
+import type { Dispatch, SetStateAction } from "react";
+import type { TechType } from "../technologiesType";
 
-const Stack = () => {
+import { RxCross2 } from "react-icons/rx";
+import { toast } from "react-toastify";
+
+type PropsType = {
+    selectedItem: TechType[];
+    setSelectedItem: Dispatch<SetStateAction <TechType[]>>
+    count: number
+    setCount: Dispatch<SetStateAction <number>>
+}
+const Stack = ({selectedItem,setSelectedItem,count,setCount}:PropsType) => {
+
+  const handleDelete=(id:number)=>{
+    const AfterDelete = selectedItem.filter((item)=>item.id != id)
+    toast.info("removed")
+    const countTech = count - 1;
+    setCount(countTech)
+    setSelectedItem(AfterDelete)
+  }
   return (
-    <div className="border border-gray-100 rounded-md p-5">
+    <div className="border border-gray-200 rounded-md p-5">
         <h3 className="text-[16px] font-bold text-[#0F172A]">Your Stack</h3>
 
-        <p  className="text-[12px] font-normal text-[#94A3B8]">No technologies selected yet.</p>
+        <p  className="text-[12px] font-normal text-[#94A3B8] pb-3">{count <= 0 ? "No technologies selected yet." : `${count} Technologies Selected`}</p>
 
-        <div className="p-5 mt-3 flex justify-center items-center border border-gray-100 shadow-sm rounded-md">
-            <p className="text-[12px] font-normal text-[#94A3B8]"> Your Stack is empty</p>
-        </div>
+            {selectedItem.length === 0 &&
+        <div className= "border border-dashed border-gray-300 shadow-sm rounded-md text-center py-5">
+          <p className="text-[12px] font-normal text-[#94A3B8]"> Your Stack is empty</p>
+            </div>
+            }
+
+            {selectedItem.map((item:TechType)=>(
+              <div key={item.id}>
+                <div className="flex justify-between gap-5 items-center border rounded-md p-4 mb-2">
+                  <div className="flex gap-3 items-center">
+                    <img src={item.icon} alt="logo" className="w-8 h-auto"/>
+
+                  <div className="">
+                    <p className="font-bold text-[12px] text-[#0F172A]">{item.name}</p>
+                    
+                    <p className="font-bold text-[8px] text-[#94A3B8]">{item.category}</p>
+                  </div>
+                  </div>
+                <button onClick={()=>handleDelete(item.id)}><RxCross2 /></button>
+                </div>
+
+              </div>
+            )
+              
+            )}
     </div>
   )
 }
