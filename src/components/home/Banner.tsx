@@ -1,5 +1,5 @@
 
-import banner from '../../assets/banner-stack.png'
+import banner from '/assets/banner-stack.png'
 const Banner = () => {
   return (
     <div className='flex justify-between items-center py-7'>

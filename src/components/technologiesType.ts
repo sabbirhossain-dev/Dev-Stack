@@ -7,4 +7,6 @@ export interface TechType{
   level: string;
   rating: number;
   badge: string;
+  btnColor:string;
+  btnBg:string;
 };

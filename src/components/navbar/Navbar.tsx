@@ -1,6 +1,6 @@
 
 import { NavLink } from 'react-router-dom'
-import logo from '../../assets/logo-text.png'
+import logo from '/assets/logo-text.png'
 
 const Navar = () => {
   return (
@@ -29,9 +29,9 @@ const Navar = () => {
             </div>
 
             {/* buttons part */}
-            <div className='flex'>
-              <button>Sign In</button>
-              <button>Sign Up</button>
+            <div className='flex gap-4'>
+              <button className='hover:text-[#D91B7E] transition-all duration-300'>Sign In</button>
+              <button className='btn btn-secondary !h-9 !min-h-0 rounded-3xl bg-[#D91B7E] border-[#D91B7E]'>Sign Up</button>
             </div>
         </div>
        </div>
