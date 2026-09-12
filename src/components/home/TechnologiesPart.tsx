@@ -1,5 +1,7 @@
 import { useState,useEffect } from "react";
 import type { TechType } from "../technologiesType";
+import { CardItems } from "./CardItems";
+import Stack from "./Stack";
 const Skills = () => {
     const [data, setData] = useState<TechType[]>([]);
     
@@ -31,16 +33,17 @@ const Skills = () => {
     },[])
   return (
     <div>
-    <h3>Explore the Technologies</h3>
-    <div>
-    {data.map(({name,id,category})=>(
-      <div key={id}>
-        <p>{name}</p>
-        <p>{category}</p>
+    <h3 className="text-[36px] font-extrabold text-[#0F172A]">Explore the <span className="bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">Technologies</span></h3>
+
+    <p className="text-[17px] pt-1 font-normal text-[#64748B]">Pick one technology per category to build your ideal stack.</p>
+
+    {/* card items */}
+    <div className="flex justify-between gap-5 py-10">
+      <div className="w-3/4"><CardItems data={data} setData={setData}/></div>
+      <div className="w-1/4">
+        <Stack />
       </div>
-    )
-      
-    )}</div>
+    </div>
   
     </div>
   )

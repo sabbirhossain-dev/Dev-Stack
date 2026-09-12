@@ -1,12 +1,12 @@
 import Banner from "./Banner"
-import Skills from "./Skills"
+import TechnologiesPart from "./TechnologiesPart"
 
 const Home = () => {
   return (
     <div className="container mx-auto">
         <Banner />
 
-       <Skills />
+       <TechnologiesPart />
         
     </div>
   )
