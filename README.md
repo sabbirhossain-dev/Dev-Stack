@@ -4,7 +4,7 @@ A modern developer toolkit where developers can explore frontend, backend, datab
 
 ## Features
 
-#33 Explore Technologies
+### Explore Technologies
 
 Browse and explore different frontend technologies through a clean and user-friendly interface.
 
