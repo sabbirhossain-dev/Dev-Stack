@@ -30,7 +30,7 @@ const Stack = ({selectedItem,setSelectedItem,count,setCount}:PropsType) => {
     <div className="border border-gray-200 rounded-md p-6">
         <h3 className="text-[16px] font-bold text-[#0F172A]">Your Stack</h3>
 
-        <p  className="text-[12px] font-normal text-[#94A3B8] pb-3">{count <= 0 ? "No technologies selected yet." : `${count} Technologies Selected`}</p>
+        <p  className="text-[12px] font-normal text-[#94A3B8] pb-4">{count <= 0 ? "No technologies selected yet." : `${count} Technologies Selected`}</p>
 
             {selectedItem.length === 0 &&
         <div className= "border border-dashed border-gray-300 shadow-sm rounded-md text-center py-5">
@@ -47,7 +47,7 @@ const Stack = ({selectedItem,setSelectedItem,count,setCount}:PropsType) => {
                   <div className="">
                     <p className="font-bold text-[12px] text-[#0F172A]">{item.name}</p>
                     
-                    <p className="font-bold text-[8px] text-[#94A3B8]">{item.category}</p>
+                    <p className="font-bold text-[9px] text-[#94A3B8]">{item.category}</p>
                   </div>
                   </div>
                 <button onClick={()=>handleDelete(item.id)}><RxCross2 /></button>

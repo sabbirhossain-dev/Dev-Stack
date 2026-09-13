@@ -36,7 +36,7 @@ const Skills = () => {
         fetchData()
     },[])
   return (
-    <div>
+    <div className="pb-20">
     <h3 className="text-[36px] font-extrabold text-[#0F172A]">Explore the <span className="bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">Technologies</span></h3>
 
     <p className="text-[17px] pt-1 font-normal text-[#64748B]">Pick one technology per category to build your ideal stack.</p>
