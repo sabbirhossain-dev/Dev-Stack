@@ -4,7 +4,7 @@ import logo from '/assets/logo-text.png'
 import { FaBars } from 'react-icons/fa6'
 import { FaTimes } from 'react-icons/fa'
 
-const Navar = () => {
+const Navbar = () => {
 
   const [toggleMenu,setToggleMenu] = useState(false)
 
@@ -19,17 +19,22 @@ const Navar = () => {
     
     {/* toggle menu */}
     <div className='sticky top-0 border-b border-gray-200'>
-      <div className='flex justify-between gap-5 bg-white px-7 py-5'>
+      <div className='flex justify-between items-center gap-5 bg-white px-4 py-5 md:hidden'>
 
-      <button className='border border-gray-200 px-2 rounded-md' onClick={handleToggle}>
-        {toggleMenu ? <FaTimes size={20} /> : <FaBars size={20} />}
+      <button className='border border-gray-200 p-2 rounded-md' onClick={handleToggle}>
+        {toggleMenu ? <FaTimes size={20} className='text-red-600'/> : <FaBars size={20} />}
       </button>
 
-
       <div>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className='w-28' />
       </div>
-        {/* <ul className='flex flex-col gap-10'>
+              <div className='flex gap-2'>
+              <button className='text-[12px] md:text-[16px] hover:text-[#D91B7E] transition-all duration-300'>Sign In</button>
+              <button className='btn btn-secondary !h-7 px-2 !min-h-0 md:!h-9 md:!min-h-0 rounded-3xl bg-gradient-to-r from-[#FF5722] to-[#D81B7E] border-none text-[12px] md:text-[16px]'>Sign Up</button>
+            </div>
+    </div>
+
+      {toggleMenu && <ul className='flex flex-col w-1/2 gap-10 bg-white px-10 pl-16 py-3 pb-7 border border-gray-100 rounded-md shadow-md absolute top-18 left-0'>
                 <li className='text-[14px] font-medium text-[#475569] hover:text-[#DB2777] transition-all duration-300'><a href="#">Home</a></li>
 
                 <li className='text-[14px] font-medium text-[#475569] hover:text-[#DB2777] transition-all duration-300'><a href="#">Technologies</a></li>
@@ -40,13 +45,8 @@ const Navar = () => {
                 
                 <li className='text-[14px] font-medium text-[#475569] hover:text-[#DB2777] transition-all duration-300'><a href="#">Contact</a></li>
               
-           </ul> */}
+           </ul>}
 
-              <div className='flex gap-4'>
-              <button className='hover:text-[#D91B7E] transition-all duration-300'>Sign In</button>
-              <button className='btn btn-secondary !h-9 !min-h-0 rounded-3xl bg-[#D91B7E] border-[#D91B7E]'>Sign Up</button>
-            </div>
-    </div>
     </div>
 
 
@@ -77,7 +77,7 @@ const Navar = () => {
             {/* buttons part */}
             <div className='flex gap-4'>
               <button className='hover:text-[#D91B7E] transition-all duration-300'>Sign In</button>
-              <button className='btn btn-secondary !h-9 !min-h-0 rounded-3xl bg-[#D91B7E] border-[#D91B7E]'>Sign Up</button>
+              <button className='btn btn-secondary !h-9 !min-h-0 rounded-3xl bg-gradient-to-r from-[#FF5722] to-[#D81B7E] border-none '>Sign Up</button>
             </div>
         </div>
        </div>
@@ -85,4 +85,4 @@ const Navar = () => {
   )
 }
 
-export default Navar
+export default Navbar

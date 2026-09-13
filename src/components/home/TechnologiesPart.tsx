@@ -36,14 +36,14 @@ const Skills = () => {
         fetchData()
     },[])
   return (
-    <div className="pb-20">
+    <div className="px-4 md:px-0 pb-20">
     <h3 className="text-[36px] font-extrabold text-[#0F172A]">Explore the <span className="bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">Technologies</span></h3>
 
     <p className="text-[17px] pt-1 font-normal text-[#64748B]">Pick one technology per category to build your ideal stack.</p>
 
     {/* card items */}
-    <div className="flex justify-between gap-5 py-10">
-      <div className="w-3/4">
+    <div className="flex flex-col md:flex-row justify-between gap-5 py-10">
+      <div className="w-full md:w-3/4">
       <CardItems 
       data={data} 
       setData={setData}
@@ -52,7 +52,7 @@ const Skills = () => {
       count={count} 
       setCount={setCount}/>
       </div>
-      <div className="w-1/4">
+      <div className="w-full md:w-1/4">
         <Stack 
         selectedItem={selectedItem} 
         setSelectedItem={setSelectedItem} 
