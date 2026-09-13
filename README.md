@@ -4,29 +4,29 @@ A modern developer toolkit where developers can explore frontend, backend, datab
 
 ## Features
 
-# Explore Technologies
+#33 Explore Technologies
 
-    Browse and explore different frontend technologies through a clean and user-friendly interface.
+Browse and explore different frontend technologies through a clean and user-friendly interface.
 
 # Build Your Stack
 
-    Select your favorite technologies and create your own personalized tech stack.
+Select your favorite technologies and create your own personalized tech stack.
 
 # Toast Notifications
 
-    Get instant feedback when adding a technology, trying to add a duplicate, removing an item, or clearing the entire stack.
+Get instant feedback when adding a technology, trying to add a duplicate, removing an item, or clearing the entire stack.
 
 # Loading State
 
-    Display a loading indicator while technology data is being loaded.
+Display a loading indicator while technology data is being loaded.
 
 # Responsive Design
 
-    Fully responsive user interface that works smoothly across mobile, tablet, and desktop devices.
+Fully responsive user interface that works smoothly across mobile, tablet, and desktop devices.
 
 # Gradient Brand Theme
 
-    A consistent orange → pink → violet gradient is used across the brand name, hero section, and primary buttons for a modern visual style.
+A consistent orange → pink → violet gradient is used across the brand name, hero section, and primary buttons for a modern visual style.
 
 ## Technologies Used
 
