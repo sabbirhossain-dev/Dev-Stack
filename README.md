@@ -40,7 +40,7 @@ A consistent orange → pink → violet gradient is used across the brand name, 
 
 #### Vite
 
--Development and build tool
+->Development and build tool
 
 #### Tailwind CSS
 
