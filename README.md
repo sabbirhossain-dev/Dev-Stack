@@ -1,6 +1,24 @@
-##Project Name: Dev Stack
+## Project Name: Dev Stack
 
 A modern developer toolkit where developers can explore frontend, backend, database, and development tools, compare technologies, and build a custom stack for their next project.
+
+## Features
+
+-Explore Technologies — Browse different frontend, backend, database, and development tools.
+-Build Your Stack — Add technologies to your personal stack and remove them whenever needed.
+-Toast Notifications — Get instant feedback when adding, removing, duplicating, or clearing technologies.
+-Loading State — Shows a loading indicator while technology data is being fetched.
+-Responsive Design — Works smoothly across mobile, tablet, and desktop devices.
+-Gradient Brand Theme — Uses a shared orange → pink → violet gradient across the brand UI.
+
+## Technologies Used
+
+-React — UI development
+-TypeScript — Type safety
+-Vite — Development and build tool
+-Tailwind CSS — Styling
+-DaisyUI — UI components
+-React-Toastify — Toast notifications
 
 <!-- # React + TypeScript + Vite
 
