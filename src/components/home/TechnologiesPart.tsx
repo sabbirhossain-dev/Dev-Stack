@@ -8,6 +8,7 @@ const Skills = () => {
     const [selectedItem,setSelectedItem] = useState<TechType[]>([])
 
     const [count, setCount] = useState(0)
+    const [isLoading, setIsLoading] = useState(true)
     
     useEffect(()=>{
 
@@ -23,6 +24,8 @@ const Skills = () => {
             }
             catch(error){
                 console.error(error)
+            }finally{
+              setIsLoading(false)
             }
         }
         // fetch("/technologies.json")
@@ -35,12 +38,18 @@ const Skills = () => {
         // })
         fetchData()
     },[])
-  return (
+    
+   
+    return (
+
     <div className="px-4 md:px-8 lg:px-0 pb-20">
     <h3 className="text-[24px] md:text-[36px] font-extrabold text-[#0F172A] text-center md:text-start">Explore the <span className="bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">Technologies</span></h3>
 
     <p className="text-[12px] md:text-[17px] pt-1 font-normal text-[#64748B] text-center md:text-start">Pick one technology per category to build your ideal stack.</p>
 
+  {isLoading && <div className="flex items-center justify-center py-10">
+          <p className="text-gray-500">Loading Technologies...</p>
+        </div>}
     {/* card items */}
     <div className="flex flex-col md:flex-row justify-between gap-5 py-10">
       <div className="w-full md:w-3/4">

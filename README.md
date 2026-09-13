@@ -1,4 +1,8 @@
-# React + TypeScript + Vite
+##Project Name: Dev Stack
+
+A modern developer toolkit where developers can explore frontend, backend, database, and development tools, compare technologies, and build a custom stack for their next project.
+
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -72,4 +76,4 @@ export default defineConfig([
   },
 ])
 
-```
+``` -->
