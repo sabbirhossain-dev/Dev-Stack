@@ -14,8 +14,10 @@ const Stack = ({selectedItem,setSelectedItem,count,setCount}:PropsType) => {
 
   const handleDelete=(id:number)=>{
 
-    const AfterDelete = selectedItem.filter((item)=>item.id != id)
-    toast.info("removed")
+    const deleteItem = selectedItem.find((item)=> item.id === id)
+    if(!deleteItem) return;
+    const AfterDelete = selectedItem.filter((item)=>item.id !== id)
+    toast.info(`${deleteItem.name} is removed`)
     const countTech = count - 1;
     setCount(countTech)
     setSelectedItem(AfterDelete)
@@ -23,7 +25,7 @@ const Stack = ({selectedItem,setSelectedItem,count,setCount}:PropsType) => {
 
   const handleRemoveAll =()=>{
     setSelectedItem([])
-    toast.info("removed all")
+    toast.info("All selected items removed!")
     setCount(0)
   }
   return (

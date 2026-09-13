@@ -26,7 +26,7 @@ const Navbar = () => {
       </button>
 
       <div>
-        <img src={logo} alt="logo" className='w-28' />
+        <a href="#"><img src={logo} alt="logo" className='w-28' /></a>
       </div>
               <div className='flex gap-2'>
               <button className='text-[12px] md:text-[16px] hover:text-[#D91B7E] transition-all duration-300'>Sign In</button>
@@ -55,7 +55,7 @@ const Navbar = () => {
          <div className="container mx-auto flex justify-between items-center py-8 ">
           {/* logo part */}
             <div>
-              <img src={logo} alt="logo" />
+              <a href="#"><img src={logo} alt="logo" /></a>
             </div>
 
             {/* menu item part */}
