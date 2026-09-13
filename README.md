@@ -32,11 +32,11 @@ A consistent orange → pink → violet gradient is used across the brand name, 
 
 #### React
 
--UI development
+->UI development
 
 #### TypeScript
 
--Type safety
+->Type safety
 
 #### Vite
 
@@ -44,15 +44,53 @@ A consistent orange → pink → violet gradient is used across the brand name, 
 
 #### Tailwind CSS
 
--Styling
+->Styling
 
 #### DaisyUI
 
--UI components
+->UI components
 
 #### React-Toastify
 
--Toast notifications
+->Toast notifications
+
+
+## React Questions and Answers
+
+### 1. What is JSX, and why is it used in React?
+
+JSX stands for JavaScript XML. It allows us to write HTML-like code inside JavaScript. React uses JSX because it makes the UI code easier to read and understand.
+
+### 2. What is the difference between props and state?
+Props are used to send data from a parent component to a child component.
+State is used to store data inside a component that can change.
+
+### 3. What does the useState hook do, and where did you use it in this project?
+useState is a React hook that lets us create and update data in a component.
+In my project, I used useState for technology data, selected items, count, and loading state.
+
+### 4. What does the useEffect hook do, and why did you need it to load the JSON data?
+useEffect is used to run some code when a component loads or when some data changes.
+I used useEffect to fetch the technology data from the JSON file when my application starts.
+
+### 5. Why does every item in a .map() list need a unique key prop?
+React needs a unique key to identify each item in a list.
+It helps React understand which item was changed, added, or removed.
+
+### 6. What is conditional rendering?
+Conditional rendering means showing something based on a condition.
+For example, in my project, I show an empty message when there are no selected technologies
+
+### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+A parent component can send data to a child using props.
+
+
+
+
+
+
+
+
 
 <!-- # React + TypeScript + Vite
 
