@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import logo from '/assets/logo-text.png'
 import { FaBars } from 'react-icons/fa6'
-import { FaTimes } from 'react-icons/fa'
+import { RxCross1 } from 'react-icons/rx'
 
 const Navbar = () => {
 
@@ -21,8 +21,8 @@ const Navbar = () => {
     <div className='sticky top-0 border-b border-gray-200'>
       <div className='flex justify-between items-center gap-5 bg-white px-4 py-5 md:hidden'>
 
-      <button className='border border-gray-200 p-2 rounded-md' onClick={handleToggle}>
-        {toggleMenu ? <FaTimes size={20} className='text-red-600'/> : <FaBars size={20} />}
+      <button className='border border-gray-200 p-2 rounded-md relative' onClick={handleToggle}>
+        {toggleMenu ? <RxCross1 size={20} className='text-red-600'/> : <FaBars size={20} />}
       </button>
 
       <div>
@@ -34,7 +34,7 @@ const Navbar = () => {
             </div>
     </div>
 
-      {toggleMenu && <ul className='flex flex-col w-1/2 gap-10 bg-white px-10 pl-16 py-3 pb-7 border border-gray-100 rounded-md shadow-md absolute top-18 left-0'>
+      {toggleMenu && <ul className='flex flex-col w-2/3 gap-6 bg-white px-10 pl-16 py-3 pb-16 border border-gray-100 rounded-md rounded-t-none shadow-md absolute top-18 left-0'>
                 <li className='text-[14px] font-medium text-[#475569] hover:text-[#DB2777] transition-all duration-300'><a href="#">Home</a></li>
 
                 <li className='text-[14px] font-medium text-[#475569] hover:text-[#DB2777] transition-all duration-300'><a href="#">Technologies</a></li>
