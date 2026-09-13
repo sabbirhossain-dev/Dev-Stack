@@ -4,53 +4,53 @@ A modern developer toolkit where developers can explore frontend, backend, datab
 
 ## Features
 
-### Explore Technologies
+#### Explore Technologies
 
 Browse and explore different frontend technologies through a clean and user-friendly interface.
 
-# Build Your Stack
+#### Build Your Stack
 
 Select your favorite technologies and create your own personalized tech stack.
 
-# Toast Notifications
+#### Toast Notifications
 
 Get instant feedback when adding a technology, trying to add a duplicate, removing an item, or clearing the entire stack.
 
-# Loading State
+#### Loading State
 
 Display a loading indicator while technology data is being loaded.
 
-# Responsive Design
+#### Responsive Design
 
 Fully responsive user interface that works smoothly across mobile, tablet, and desktop devices.
 
-# Gradient Brand Theme
+#### Gradient Brand Theme
 
 A consistent orange → pink → violet gradient is used across the brand name, hero section, and primary buttons for a modern visual style.
 
 ## Technologies Used
 
-# React
+#### React
 
 -UI development
 
-# TypeScript
+#### TypeScript
 
 -Type safety
 
-# Vite
+#### Vite
 
 -Development and build tool
 
-# Tailwind CSS
+#### Tailwind CSS
 
 -Styling
 
-# DaisyUI
+#### DaisyUI
 
 -UI components
 
-# React-Toastify
+#### React-Toastify
 
 -Toast notifications
 
