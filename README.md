@@ -9,12 +9,12 @@ Users can select technologies and see their personalized stack in one place. Thi
 
 ## Technologies Used
 
-- #### React -- ##### UI development
-- #### TypeScript -- ##### Type safety
-- #### Vite -- ##### Development and build tool
-- #### Tailwind CSS -- ##### Styling
-- #### DaisyUI -- ##### UI components
-- #### React-Toastify -- ##### Toast notifications
+- #### React -- UI development
+- #### TypeScript --  Type safety
+- #### Vite -- Development and build tool
+- #### **Tailwind CSS** -- Styling
+- #### DaisyUI -- UI components
+- #### React-Toastify -- Toast notifications
 
 
 
