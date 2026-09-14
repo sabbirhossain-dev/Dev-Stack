@@ -23,6 +23,7 @@ Users can select technologies and see their personalized stack in one place. Thi
 - Toast notifications
 
 
+
 ## Features
 
 #### Explore Technologies
@@ -37,6 +38,7 @@ Users can select technologies and see their personalized stack in one place. Thi
 - Fully responsive user interface that works smoothly across mobile, tablet, and desktop devices.
 #### Gradient Brand Theme
 - A consistent orange → pink → violet gradient is used across the brand name, hero section, and primary buttons for a modern visual style.
+
 
 
 ## React Questions and Answers
