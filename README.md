@@ -1,50 +1,43 @@
 # Dev Stack Builder 
 
 ## Description
-A modern developer toolkit where developers can explore frontend, backend, database, and development tools, compare technologies, and build a custom stack for their next project.
+
+DevStack is a responsive web application designed to help developers explore and build their ideal development stack. It provides a simple way to discover different technologies across various categories, compare their features, and select the tools that best fit a project. Each technology includes useful information such as its category, experience level, description, and rating.
+Users can select technologies and see their personalized stack in one place. This project was built to practice modern frontend development concepts such as component-based architecture, state management, conditional rendering, reusable components, and responsive UI design.
+
 
 
 ## Technologies Used
 
 #### React
 - UI development
-- 
 #### TypeScript
 - Type safety
-
 #### Vite
 - Development and build tool
-
 #### Tailwind CSS
 - Styling
-
 #### DaisyUI
 - UI components
-
 #### React-Toastify
 - Toast notifications
-
 
 
 ## Features
 
 #### Explore Technologies
 - Browse and explore different frontend technologies through a clean and user-friendly interface.
-
 #### Build Your Stack
 - Select your favorite technologies and create your own personalized tech stack.
-
 #### Toast Notifications
 - Get instant feedback when adding a technology, trying to add a duplicate, removing an item, or clearing the entire stack.
-
 #### Loading State
 - Display a loading indicator while technology data is being loaded.
-
 #### Responsive Design
 - Fully responsive user interface that works smoothly across mobile, tablet, and desktop devices.
-
 #### Gradient Brand Theme
 - A consistent orange → pink → violet gradient is used across the brand name, hero section, and primary buttons for a modern visual style.
+
 
 ## React Questions and Answers
 
